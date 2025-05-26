@@ -1,6 +1,8 @@
 import { getAuth } from "firebase/auth";
 
 class ProfileService {
+
+    API = "https://onlineitcourses-762p.onrender.com";
     constructor() {
         this.auth = getAuth();
     }
@@ -8,7 +10,7 @@ class ProfileService {
     getUserData = async () => {
         const user = this.auth.currentUser;
         const idToken = await user.getIdToken();
-        const response = await fetch('http://localhost:3001/profile', {
+        const response = await fetch(`${this.API}/profile`, {
             headers: {
                 Authorization: `Bearer ${idToken}`,
             }});

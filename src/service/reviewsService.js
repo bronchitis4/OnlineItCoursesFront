@@ -1,9 +1,10 @@
 import { getAuth } from 'firebase/auth';
 
 class ReviewsService {
+
+    API = "https://onlineitcourses-762p.onrender.com";
     constructor() {
         this.auth = getAuth();
-
     }
     
     getReviewsByCourseId = async (id) => {
@@ -11,7 +12,7 @@ class ReviewsService {
         const user = this.auth.currentUser;
         const idToken = await user.getIdToken();
         const response = await fetch(
-            `http://localhost:3001/reviews?id=${id}`, {
+            `${this.API}/reviews?id=${id}`, {
             headers: {
                 Authorization: `Bearer ${idToken}`,
             }}
@@ -28,7 +29,7 @@ class ReviewsService {
         const idToken = await user.getIdToken();
         try {
             console.log(data);
-            const response = await fetch(`http://localhost:3001/reviews`, {
+            const response = await fetch(`${this.API}/reviews`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,8 +1,9 @@
 
 class AuthService {
+    API = "https://onlineitcourses-762p.onrender.com";
     register = async (data) => {
         try {
-            const response = await fetch(`http://localhost:3001/auth/register`, {
+            const response = await fetch(`${this.API}/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -24,7 +25,7 @@ class AuthService {
 
     login = async (data) => {
         try {
-            const response = await fetch("http://localhost:3001/auth/login", {
+            const response = await fetch(`${this.API}/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
