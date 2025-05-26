@@ -1,0 +1,1007 @@
+body {
+  font-family: 'Andika', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  background: url('../public/webbb1.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.start-btn > a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background: rgba(240, 240, 240, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  background: rgba(26, 188, 156, 0.9);
+}
+
+.profile-btn {
+  margin-left: auto;
+  padding: 10px 18px;
+  background: rgba(26, 188, 156, 0.9);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.profile-btn:hover {
+  background: rgba(22, 160, 133, 0.9);
+  transform: scale(1.1);
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.courses, .review-list-wrapper {
+  text-align: center;
+  padding: 10px 60px 50px 60px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.courses h1 {
+  font-size: 26px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.course {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.schedule {
+  text-align: center;
+  padding: 10px 60px 50px 60px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: rgba(230, 230, 230, 0.9);
+}
+
+tr:nth-child(even) {
+  background: rgba(245, 245, 245, 0.8);
+}
+
+.profile-info {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses-certificates {
+  text-align: left;
+}
+
+.courses-certificates h2 {
+  text-align: center;
+}
+
+.courses-certificates a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile-info img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-info p {
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  background-color: #f0f0f0;
+  color: #2c3e50;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 16px;
+  background: rgba(240, 240, 240, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: #2c3e50;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #555;
+}
+
+.popular-courses {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.popular-courses h2 {
+  font-size: 30px;
+}
+
+.news {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.news h2{
+  text-align: center;
+}
+
+.reviews {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.about {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  height: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.5s ease-in-out;
+}
+
+.start-btn,
+.complete-btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-family: 'Andika', sans-serif;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: rgba(26, 188, 156, 0.8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.start-btn:hover,
+.complete-btn:hover {
+  background: rgba(22, 160, 133, 0.95);
+  transform: scale(1.05);
+}
+
+.start-btn:disabled,
+.complete-btn:disabled {
+  background: rgba(200, 200, 200, 0.8);
+  color: #555;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.progress-scale-container {
+  display: flex;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e0e0e0;
+  margin-top: 10px;
+}
+
+.progress-bar-registered {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.progress-bar-completed {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.course-completed {
+  background-color: #e0ffe0;
+  border: 2px solid darkgreen;
+  opacity: 0.8;
+}
+
+.course-in-progress {
+  border: 2px solid green;
+}
+
+.done-label {
+  font-weight: bold;
+  color: green;
+  margin-top: 5px;
+}
+
+.progress-container {
+  margin-top: 5px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.progress-bar.green {
+  background-color: #4caf50;
+}
+
+.certificate-label {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 5px;
+}
+
+.progress-scale-container {
+  margin-top: 10px;
+}
+
+.progress-bar-registered,
+.progress-bar-completed {
+  height: 20px;
+  margin-top: 4px;
+  padding-left: 10px;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.progress-bar-registered {
+  background-color: #2196f3;
+}
+
+.progress-bar-completed {
+  background-color: #4caf50;
+}
+
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+  }
+
+  .profile-btn {
+      margin-left: 0;
+      margin-top: 15px;
+  }
+
+  .courses-grid {
+      grid-template-columns: 1fr;
+  }
+
+  th, td {
+      border: 1px solid #ddd;
+      padding: 3px;
+      text-align: center;
+  }
+}
+
+/* Стилі для елементів управління */
+.controls {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.sort-btn {
+  padding: 8px 16px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sort-btn:hover {
+  background: #16a085;
+}
+
+.category-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  min-width: 150px;
+}
+
+.course-card, .review-list-item {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.review-list-item {
+  text-align: left;
+}
+
+.review-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.course-card.completed {
+  background-color: #e0ffe0;
+    border: 2px solid darkgreen;
+    opacity: 0.8;
+}
+
+.courses-controls {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.sort-btn {
+  font-family: 'Andika', sans-serif;
+  width: 210px;
+  padding: 4px 20px;
+  background-color: #1abc9c;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sort-btn.active {
+  width: 210px;
+  padding: 4px 20px;
+  background-color: #1abc9c;
+  color: white;
+}
+
+.category-select {
+  font-family: 'Andika', sans-serif;
+  padding: 4px 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.completed-label {
+  color: #8d7f8a;
+  font-style: italic;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+/* Повідомлення про успіх */
+.success-message {
+  color: #8d7f8a;
+  font-style: italic;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+/* Форма відгуку */
+.feedback-form {
+  margin-top: 24px;
+  padding: 16px 0 0;
+}
+
+.feedback-form textarea {
+  width: 90%;
+  min-height: 50px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(224, 224, 224, 0.7);
+  border-radius: 10px;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Andika', sans-serif;
+  font-size: 16px;
+}
+
+/* Повідомлення для неавторизованих користувачів */
+.auth-message {
+  background-color: rgba(249, 249, 249, 0);
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+
+/* Контейнер авторизації */
+.auth-container {
+  max-width: 500px;
+  margin: 32px auto;
+  padding: 32px;
+  border: 1px solid rgba(224, 224, 224, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-container input {
+  padding: 12px;
+  border: 1px solid rgba(221, 221, 221, 0.7);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Andika', sans-serif;
+  font-size: 16px;
+}
+
+.auth-container button {
+  padding: 12px;
+  background: rgba(46, 204, 113, 0.9);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Andika', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.auth-container button:hover {
+  transform: scale(1.02);
+}
+
+/* Помилки */
+.error {
+  color: #e74c3c;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Кнопки авторизації в хедері */
+.auth-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.login-btn,
+.logout-btn,
+.signup-btn {
+  margin-left: auto;
+  padding: 10px 18px;
+  background: #1abc9ce6;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.login-btn {
+  background: #1abc9ce6;
+  color: white;
+}
+
+.signup-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #2c3e50;
+}
+
+.logout-btn {
+  background: rgba(231, 76, 60, 0.9);
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Andika', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.login-btn:hover,
+.signup-btn:hover,
+.logout-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .auth-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .auth-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .course-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.submit-btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-family: 'Andika', sans-serif;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: rgba(26, 188, 156, 0.8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+  background: rgba(22, 160, 133, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Додайте ці стилі до styles.css */
+
+/* Оновлені стилі для картки */
+.course-card {
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.course-card.clickable {
+  cursor: pointer;
+}
+
+.course-card.clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Стилі для перемикання між екранами */
+.lessons-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Стилі для списку уроків */
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border-left: 4px solid #1abc9ce6;
+  cursor: default;
+}
+
+.lesson-item.completed {
+  border-left-color: #1abc9ce6;
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.lesson-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lesson-number {
+  font-weight: bold;
+  color: #1abc9ce6;
+}
+
+.lesson-item.completed .lesson-number {
+  color: #1abc9ce6;
+}
+
+.lesson-title {
+  flex-grow: 1;
+}
+
+.lesson-status {
+  color: #1abc9ce6;
+  font-weight: bold;
+}
+
+.complete-lesson-btn {
+  padding: 6px 12px;
+  font-family: 'Andika', sans-serif;
+  background: #1abc9ce6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.feedback-section {
+  margin-top: 3px;
+  padding-top: 2px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1abc9ce6;
+  transition: width 0.5s ease;
+}
+
+.start-btn {
+  padding: 10px 18px;
+  background: #1abc9ce6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.start-btn:hover {
+  background: #1abc9ce6;
+  transform: scale(1.05);
+}
+
+.completed-label {
+  font-weight: bold;
+  color: #1abc9ce6;
+  margin-top: 10px;
+}
+
+.course-actions {
+  margin-top: 15px;
+}
+
+.profile-info {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+  border: 4px solid #1abc9c;
+}
+
+.profile-info p {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 8px 0;
+}
+
+.profile-courses-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.profile-courses-list li {
+  background: rgb(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1abc9c;
+  transition: width 0.5s ease;
+}
+
+.progress-bar.green {
+  background-color: #2ecc71;
+}
+
+.certificate-label {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .profile-info {
+    padding: 20px;
+  }
+}
+
+.profile-tabs {
+  font-family: 'Andika', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  font-family: 'Andika', sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  margin: 0 10px;
+}
+
+.tab-btn.active {
+  font-family: 'Andika', sans-serif;
+  color: #1abc9c;
+  border-bottom: 3px solid #1abc9c;
+}
+
+.tab-btn:hover {
+  color: #1abc9c;
+}
+
+@media (max-width: 480px) {
+  .profile-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    margin: 5px 0;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.user-feedbacks {
+  margin-top: 20px;
+}
+
+.feedbacks-list {
+  display: grid;
+  gap: 15px;
+}
+
+.feedback-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-course {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+}
+
+.feedback-text {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.feedback-date {
+  font-size: 12px;
+  color: #7f8c8d;
+  text-align: right;
+  margin: 5px 0 0 0;
+}
+
+.feedback-form {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-weight: bold;
+}
